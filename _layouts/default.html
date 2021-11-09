@@ -13,10 +13,6 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/resources/">Resources</a>
-    </nav>
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
@@ -46,6 +42,10 @@
         {% endif %}
       </header>
       <section>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/resources/">Resources</a>
+        </nav>
 
       {{ content }}
 
